@@ -6,50 +6,50 @@ import { Github, ExternalLink } from 'lucide-react';
 const Projects = () => {
   const projects = [
     {
-      title: "Plant Disease Prediction",
-      description: "Built a machine learning model to analyze customer sentiment from social media data using NLP techniques and deep learning.",
-      image: "https://plus.unsplash.com/premium_photo-1687880582685-b33bbca934b2?q=80&w=1040&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-      technologies: ["Python", "TensorFlow", "CV", "Flask"],
-      githubUrl: "https://github.com/sujithvaishnav/AgriVision/tree/main/notebooks",
-      liveUrl: "https://demo.com",
-      category: "Deep Learning"
-    },
-    {
-      title: "Bird Voice Recongnizer",
-      description: "Developed a time series forecasting model using LSTM networks to predict stock prices with 85% accuracy.",
-      image: "https://images.unsplash.com/photo-1599550496117-50bf1d7b0a70?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-      technologies: ["Python", "Keras", "Pandas", "Librosa", "Smote"],
-      githubUrl: "https://github.com/sujithvaishnav/Bird_Voice_Recognition",
-      liveUrl: "https://demo.com",
-      category: "Machine Learning"
-    },
-    {
-      title: "EDA and Data Cleaning Tool",
-      description: "Created a machine learning pipeline to predict customer churn with 92% accuracy using various classification algorithms.",
-      image: "https://images.unsplash.com/photo-1486312338219-ce68d2c6f44d",
-      technologies: ["Python", "Scikit-learn", "Matplotlib", "Seaborn", "Streamlit", "Plotly"],
-      githubUrl: "https://github.com/sujithvaishnav/EDA-and-Data-Cleaning-Tool",
-      liveUrl: "https://demo.com",
-      category: "Data Science"
-    },
-    {
-      title: "Gender Classification",
-      description: "Implemented real-time object detection system using YOLO algorithm for autonomous vehicle applications.",
-      image: "https://images.unsplash.com/photo-1649972904349-6e44c42644a7",
-      technologies: ["Python", "OpenCV", "PyTorch", "YOLO"],
-      githubUrl: "https://github.com/sujithvaishnav/GenderClassification_CNN",
-      liveUrl: "https://demo.com",
-      category: "Computer Vision"
-    },
-    {
-      title: "Loan Approval Prediction",
-      description: "Built a collaborative filtering recommendation system for e-commerce platform serving 10M+ users.",
-      image: "https://images.unsplash.com/photo-1488590528505-98d2b5aba04b",
-      technologies: ["Python", "Scikit-learn", "Matplotlib", "Pandas", "Numpy"],
-      githubUrl: "https://github.com/sujithvaishnav/Loan-approval",
-      liveUrl: "https://demo.com",
-      category: "Data Science"
-    }
+  title: "Plant Disease Prediction",
+  description: "Developed a deep learning model to detect plant leaf diseases using image classification techniques and deployed it using Flask.",
+  image: "https://plus.unsplash.com/premium_photo-1687880582685-b33bbca934b2?q=80&w=1040&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+  technologies: ["Python", "TensorFlow", "CV", "Flask"],
+  githubUrl: "https://github.com/sujithvaishnav/AgriVision/tree/main/notebooks",
+  liveUrl: "https://demo.com",
+  category: "Deep Learning"
+},
+{
+  title: "Bird Voice Recognizer",
+  description: "Built an audio classification model using spectrograms and deep learning to identify bird species from their calls.",
+  image: "https://images.unsplash.com/photo-1599550496117-50bf1d7b0a70?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+  technologies: ["Python", "Keras", "Pandas", "Librosa", "SMOTE"],
+  githubUrl: "https://github.com/sujithvaishnav/Bird_Voice_Recognition",
+  liveUrl: "https://demo.com",
+  category: "Machine Learning"
+},
+{
+  title: "EDA and Data Cleaning Tool",
+  description: "Built an interactive Streamlit tool for automated data profiling, cleaning, and visualization using Plotly and Seaborn.",
+  image: "https://images.unsplash.com/photo-1486312338219-ce68d2c6f44d",
+  technologies: ["Python", "Scikit-learn", "Matplotlib", "Seaborn", "Streamlit", "Plotly"],
+  githubUrl: "https://github.com/sujithvaishnav/EDA-and-Data-Cleaning-Tool",
+  liveUrl: "https://demo.com",
+  category: "Data Science"
+},
+{
+  title: "Gender Classification",
+  description: "Designed and trained a CNN model to classify gender from facial images, utilizing OpenCV for preprocessing and PyTorch for modeling.",
+  image: "https://images.unsplash.com/photo-1649972904349-6e44c42644a7",
+  technologies: ["Python", "OpenCV", "PyTorch", "YOLO"],
+  githubUrl: "https://github.com/sujithvaishnav/GenderClassification_CNN",
+  liveUrl: "https://demo.com",
+  category: "Computer Vision"
+},
+{
+  title: "Loan Approval Prediction",
+  description: "Created a machine learning classification model to predict loan approvals based on applicant data and financial history.",
+  image: "https://images.unsplash.com/photo-1488590528505-98d2b5aba04b",
+  technologies: ["Python", "Scikit-learn", "Matplotlib", "Pandas", "Numpy"],
+  githubUrl: "https://github.com/sujithvaishnav/Loan-approval",
+  liveUrl: "https://demo.com",
+  category: "Data Science"
+}
   ];
 
   return (
