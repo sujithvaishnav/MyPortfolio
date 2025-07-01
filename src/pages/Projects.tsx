@@ -37,7 +37,7 @@ const Projects = () => {
       description: "Implemented real-time object detection system using YOLO algorithm for autonomous vehicle applications.",
       image: "https://images.unsplash.com/photo-1649972904349-6e44c42644a7",
       technologies: ["Python", "OpenCV", "PyTorch", "YOLO"],
-      githubUrl: "https://github.com",
+      githubUrl: "https://github.com/sujithvaishnav/GenderClassification_CNN",
       liveUrl: "https://demo.com",
       category: "Computer Vision"
     },
