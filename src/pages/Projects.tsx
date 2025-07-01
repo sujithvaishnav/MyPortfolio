@@ -28,7 +28,7 @@ const Projects = () => {
       description: "Created a machine learning pipeline to predict customer churn with 92% accuracy using various classification algorithms.",
       image: "https://images.unsplash.com/photo-1486312338219-ce68d2c6f44d",
       technologies: ["Python", "Scikit-learn", "Matplotlib", "Seaborn", "Streamlit", "Plotly"],
-      githubUrl: "https://github.com",
+      githubUrl: "https://github.com/sujithvaishnav/EDA-and-Data-Cleaning-Tool",
       liveUrl: "https://demo.com",
       category: "Data Science"
     },
