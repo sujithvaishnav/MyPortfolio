@@ -72,10 +72,11 @@ const Home = () => {
   </Button>
 
   <Button asChild size="lg" className="bg-yellow-400 text-black hover:bg-yellow-300">
-    <a href="public/Malla_Sujith_Vaishnav_Resume.pdf" download>
-      Download Resume
-    </a>
-  </Button>
+  <a href="/Malla_Sujith_Vaishnav_Resume.pdf" download>
+    Download Resume
+  </a>
+</Button>
+
 </div>
     </div>
   </div>
