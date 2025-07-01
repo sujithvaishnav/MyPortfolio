@@ -71,8 +71,8 @@ const Home = () => {
     <Link to="/contact">Get In Touch</Link>
   </Button>
 
-  <Button asChild size="lg" className="bg-yellow-400 text-black hover:bg-yellow-300">
-  <a href="/Malla_Sujith_Vaishnav_Resume.pdf" download>
+<Button asChild size="lg" className="bg-yellow-400 text-black hover:bg-yellow-300">
+  <a href="/Malla_Sujith_Vaishnav_Resume.pdf" download="Malla_Sujith_Vaishnav_Resume.pdf">
     Download Resume
   </a>
 </Button>
