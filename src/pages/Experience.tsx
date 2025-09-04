@@ -4,6 +4,20 @@ import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
 const Experience = () => {
   const experiences = [
     {
+      title: "Computer Vision Domain Lead",
+      company: "Epoch, AIML Club",
+      period: "2025 - 2026",
+      location: "Sri City, AP, India",
+      description: [
+        "Leading the Computer Vision domain by guiding core members in projects on image classification, object detection, and advanced deep learning models.",
+        "Overseeing project workflows, ensuring smooth collaboration, and driving impactful outcomes within the domain.",
+        "Conducting and supervising workshops, technical talks, and hands-on sessions on Computer Vision, OpenCV, and deep learning.",
+        "Mentoring juniors, reviewing project progress, and providing guidance on model design, debugging, and optimization.",
+        "Coordinating with other domain leads in the Epoch AIML Club to integrate CV with NLP, RL, and other AI fields for interdisciplinary projects."
+      ],
+      technologies: ["Python", "OpenCV", "TensorFlow", "Keras", "Scikit-learn"]
+    },
+    {
       title: "Computer Vision Core Member",
       company: "Epoch, AIML Club",
       period: "2024 - 2025",
