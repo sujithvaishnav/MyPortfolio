@@ -1,4 +1,4 @@
-
+"use client";
 import { useState } from 'react';
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
 import { Button } from '@/components/ui/button';
@@ -12,15 +12,41 @@ const Contact = () => {
     email: '',
     message: ''
   });
+  const [loading, setLoading] = useState(false);
 
-  const handleSubmit = (e: React.FormEvent) => {
+  const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
-    // Handle form submission here
-    toast({
-      title: "Message Sent!",
-      description: "Thank you for your message. I'll get back to you soon!",
-    });
-    setFormData({ name: '', email: '', message: '' });
+    setLoading(true);
+
+    try {
+      const res = await fetch("https://formspree.io/f/xyznwoae", {
+        method: "POST",
+        headers: { "Accept": "application/json" },
+        body: JSON.stringify(formData),
+      });
+
+      if (res.ok) {
+        toast({
+          title: "✅ Message Sent!",
+          description: "Thank you for your message. I'll get back to you soon!",
+        });
+        setFormData({ name: '', email: '', message: '' });
+      } else {
+        toast({
+          title: "❌ Error",
+          description: "Something went wrong. Please try again later.",
+          variant: "destructive",
+        });
+      }
+    } catch (error) {
+      toast({
+        title: "❌ Network Error",
+        description: "Check your internet connection and try again.",
+        variant: "destructive",
+      });
+    } finally {
+      setLoading(false);
+    }
   };
 
   const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
@@ -132,9 +158,9 @@ const Contact = () => {
                     name="name"
                     type="text"
                     required
+                    placeholder="Your full name"
                     value={formData.name}
                     onChange={handleChange}
-                    placeholder="Your full name"
                   />
                 </div>
 
@@ -147,9 +173,9 @@ const Contact = () => {
                     name="email"
                     type="email"
                     required
+                    placeholder="your@email.com"
                     value={formData.email}
                     onChange={handleChange}
-                    placeholder="your@email.com"
                   />
                 </div>
 
@@ -161,9 +187,9 @@ const Contact = () => {
                     id="message"
                     name="message"
                     required
+                    rows={6}
                     value={formData.message}
                     onChange={handleChange}
-                    rows={6}
                     className="flex w-full rounded-md border border-input bg-background px-3 py-2 text-sm ring-offset-background placeholder:text-muted-foreground focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:cursor-not-allowed disabled:opacity-50"
                     placeholder="Tell me about your project or just say hello..."
                   />
@@ -173,9 +199,10 @@ const Contact = () => {
                   type="submit"
                   className="w-full bg-yellow-400 text-black hover:bg-yellow-300"
                   size="lg"
+                  disabled={loading}
                 >
                   <Send className="w-4 h-4 mr-2" />
-                  Send Message
+                  {loading ? "Sending..." : "Send Message"}
                 </Button>
               </form>
             </CardContent>
