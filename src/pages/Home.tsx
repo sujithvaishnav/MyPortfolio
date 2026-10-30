@@ -7,7 +7,7 @@ import { Button } from '@/components/ui/button';
 const Home = () => {
   const [displayText, setDisplayText] = useState('');
   const [currentIndex, setCurrentIndex] = useState(0);
-  const titles = ['Data Scientist', 'AI Engineer', 'Machine Learning Expert', 'Problem Solver'];
+  const titles = [ 'AI Engineer','Data Scientist', 'Machine Learning Expert', 'Problem Solver'];
 
   useEffect(() => {
     const currentTitle = titles[currentIndex];
