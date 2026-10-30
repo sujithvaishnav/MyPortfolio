@@ -105,16 +105,15 @@ const Home = () => {
           </div>
           
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-            {[
+            {[{
+                title: "AI Engineering",
+                description: "Developing and deploying machine learning models that scale and perform in production",
+                icon: "🤖"
+              },
               {
                 title: "Data Science",
                 description: "Extracting meaningful insights from complex datasets using statistical analysis and visualization",
                 icon: "📊"
-              },
-              {
-                title: "AI Engineering",
-                description: "Developing and deploying machine learning models that scale and perform in production",
-                icon: "🤖"
               },
               {
                 title: "Problem Solving",
